@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand: 112 66 248; /* indigo-600-ish */
+}
+
+html, body, #root { height: 100%; }
+
+.app-container {
+  @apply min-h-screen;
+}
+
+.card {
+  @apply bg-white rounded-2xl shadow-soft p-5;
+}
+
+.btn {
+  @apply px-3 py-2 rounded-xl bg-indigo-600 text-white hover:bg-indigo-700 active:scale-95 transition;
+}
+
+.input {
+  @apply px-3 py-2 rounded-xl bg-slate-100 focus:bg-white outline-none ring-2 ring-transparent focus:ring-indigo-300;
+}
